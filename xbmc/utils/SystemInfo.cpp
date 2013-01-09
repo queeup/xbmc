@@ -57,10 +57,10 @@ bool CSysInfoJob::DoWork()
   m_info.systemUptime      = GetSystemUpTime(false);
   m_info.systemTotalUptime = GetSystemUpTime(true);
   m_info.internetState     = GetInternetState();
-  m_info.videoEncoder      = GetVideoEncoder();
+  //m_info.videoEncoder      = GetVideoEncoder();
   m_info.cpuFrequency      = GetCPUFreqInfo();
-  m_info.kernelVersion     = CSysInfo::GetKernelVersion();
-  m_info.macAddress        = GetMACAddress();
+  //m_info.kernelVersion     = CSysInfo::GetKernelVersion();
+  //m_info.macAddress        = GetMACAddress();
   m_info.batteryLevel      = GetBatteryLevel();
   return true;
 }
